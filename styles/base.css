@@ -19,7 +19,6 @@ header {
 
 header h1 {
     font-family: "Baloo Bhaina 2", sans-serif;
-    font-optical-sizing: auto;
     font-weight: 700;
     display: flex;
 	align-items: center;
@@ -51,7 +50,6 @@ nav a {
     text-decoration: none;
     text-align: center;
     font-family: "Baloo Bhaina 2", sans-serif;
-    font-optical-sizing: auto;
     font-weight: 400;
     font-size: 1.75rem;
 }
