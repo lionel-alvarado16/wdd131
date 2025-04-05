@@ -1,0 +1,151 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto", serif;
+    font-weight: 400;
+    font-size: .9rem;
+    font-style: normal;
+    background-color: white;
+}
+
+header {
+    background-color: #1B4965;
+    color: white;
+    padding: 15px;
+    font-size: .75rem;
+}
+
+main {
+    min-height: 20rem;
+}
+
+.prf {
+    margin: 15px 0;
+    background-color: #ddd;
+    padding: 15px;
+}
+
+.prf label {
+    display: block;
+    padding-top: 1rem;
+}
+
+.prf input[type="date"],
+.prf input[type="text"],
+.prf select,
+.prf input[type="text"] {
+    display: block;
+    border: solid 1px #999;
+    padding: .5rem;
+    width: 100%;
+    max-width: 400px;
+    appearance: none;
+    margin-top: .25rem;
+}
+
+/* Estilos para la calificación */
+.star-rating {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row-reverse;
+    max-width: 400px;
+    align-items: center;
+}
+
+.star-rating input[type="radio"] {
+    display: none;
+    /* Oculta los radio buttons */
+}
+
+.star-rating label {
+    font-size: 0.75rem;
+    /* Tamaño de las estrellas */
+    color: black;
+    /* Color inicial */
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: .5rem;
+}
+
+/* Muestra las estrellas en dorado cuando se seleccionan */
+.star-rating input[type="radio"]:checked+label,
+.star-rating input[type="radio"]:hover+label,
+.star-rating label:hover,
+.star-rating label:hover+label {
+    color: goldenrod;
+    /* Color de las estrellas al interactuar */
+    font-weight: bold;
+}
+
+/* Simulación de radio button con círculo */
+.star-rating input[type="radio"]+label::after {
+    content: '';
+    display: block;
+    width: 15px;
+    height: 15px;
+    border: 1px solid gray;
+    border-radius: 50%;
+    margin-top: 5px;
+    background-color: white;
+}
+
+.star-rating input[type="radio"]:checked+label::after {
+    background-color: #1B4965;
+    /* Cambio del círculo si se selecciona */
+}
+
+.prf input[type="checkbox"] {
+    margin-right: 6px;
+}
+
+.optional {
+    color: #445ba9;
+}
+
+textarea {
+    height: 100px;
+    width: 100%;
+    max-width: 400px;
+    padding: .5rem;
+    border: solid 1px #999;
+    resize: vertical;
+    /* transition: border-color 0.3s; */
+    margin-top: .25rem;
+}
+
+/* textarea:focus {
+    border-color: #66afe9;
+    box-shadow: 0 0 5px rgba(102, 175, 233, 0.5);
+} */
+
+.prf input[type="submit"] {
+    border: solid 1px #999;
+    background-color: #eee;
+    padding: .6rem;
+    width: 100%;
+    max-width: 400px;
+    margin: 1.5rem 0 .5rem 0;
+    box-shadow: 1px 1px 4px #999;
+    font-weight: bolder;
+}
+
+main p,
+.counter {
+    margin: 20px 0;
+    padding: 0 2%;
+    font-size: 1.2rem;
+}
+
+footer {
+    background-color: #1B4965;
+    color: white;
+    text-align: center;
+    font-size: 1.2rem;
+    padding: 20px;
+}
