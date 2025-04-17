@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 - Visit Cusco</title>
+    <meta name="description" content="Final Project">
+    <meta name="author" content="Lionel A. Alvarado">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Macondo&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles/base-pages.css">
+    <script src="scripts/final-project.js" defer></script>
+</head>
+
+<body>
+    <div id="content">
+        <div id="box">
+            <header>
+                <a id="logo_link" href="visitcusco.html">
+                    <img class="logo" src="images/vclogo.png" alt="Visiting Cusco Logo" loading="lazy">
+                </a>
+                <a id="menu" href="#"></a>
+                <nav>
+                    <ul class="navigation">
+                        <li><a href="visitcusco.html">Home</a></li>
+                        <li><a href="attractions.html">Attractions</a></li>
+                        <li><a href="contactus.html">Contact Us</a></li>
+                    </ul>
+                </nav>
+            </header>
+            <div id="hero">
+                <section id="hero-msg">
+                    <h1 class="home-title">Cusco</h1>
+                    <h4>The historical capital of Peru</h4>
+                </section>
+            </div>
+        </div>
+
+        <main class="contactus-grid">
+            <h2 id="attract-title">¡Contact us and receive additional guidance to make your visit to Cusco an unforgettable 
+                experience!</h2>
+            <form method="get" action="message.html" class="prf">
+                <label>Name <input type="text" id="name" name="name" required></label>
+                <label>Email <input type="email" name="email" placeholder="someone@gmail.com" required></label>
+                <label for="review">Message</label>
+                <textarea id="review" name="review"></textarea>
+
+                <input type="submit" value="Send Message">
+            </form>
+        </main>
+        <footer>
+            <p><span id="currentyear"></span></p>
+            <p><a href="#">Contact Us</a></p>
+            <div class="social">
+                <a href="https://facebook.com" target="_blank">
+                    <img src="images/facebook.png" alt="fb icon" loading="lazy">
+                </a>
+                <a href="https://twitter.com" target="_blank">
+                    <img src="images/twitter.png" alt="twitter icon" loading="lazy">
+                </a>
+                <a href="https://instagram.com" target="blank">
+                    <img src="images/instagram.png" alt="instagram icon" loading="lazy">
+                </a>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>
