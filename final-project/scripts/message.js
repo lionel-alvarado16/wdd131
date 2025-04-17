@@ -17,6 +17,16 @@ updateFooterContent();
 
 window.addEventListener("resize", updateFooterContent);
 
+// Hamburger menu
+const hambutton = document.querySelector('#menu');
+const mainnav = document.querySelector('.navigation');
+
+hambutton.addEventListener('click', () => {
+    mainnav.classList.toggle('show');
+    hambutton.classList.toggle('show');
+});
+
+// Using local storage
 
 const formSubmission = document.querySelector(".submit");
 
